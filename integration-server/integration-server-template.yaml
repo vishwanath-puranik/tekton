@@ -15,7 +15,7 @@ spec:
   pod:
     containers:
       runtime:
-        image: quay.io/vishwanath_puranik/testapp:latest
+        image: quay.io/vishwanath_puranik/oldapp:latest
         resources:
           limits:
             cpu: 300m
