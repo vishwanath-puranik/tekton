@@ -15,7 +15,7 @@ spec:
   pod:
     containers:
       runtime:
-        image: quay.io/vishwanath_puranik/oldapp:latest
+        image: quay.io/vishwanath_puranik/ace-deploy-image-04:latest
         resources:
           limits:
             cpu: 300m
