@@ -1,4 +1,4 @@
-ARG  FROMIMAGE=quay.io/vishwanath_puranik/aceapp:latest
+ARG  FROMIMAGE=quay.io/vishwanath_puranik/ace-server:latest
 FROM ${FROMIMAGE}
 
 USER root
