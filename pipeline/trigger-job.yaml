@@ -1,7 +1,11 @@
 ﻿apiVersion: batch/v1
 kind: Job
 metadata:
+<<<<<<< HEAD
   name: trigger
+=======
+  name: test
+>>>>>>> 62805551454f25296eefde51490bad7ab52159e2
   namespace: devops
 spec:
   selector: {}
