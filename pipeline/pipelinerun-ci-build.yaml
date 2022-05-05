@@ -1,0 +1,15 @@
+﻿apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: run-ci-pipeline-01-
+  namespace: devops
+spec: 
+  pipelineRef:
+    name: ci-pipeline-01
+  workspaces:
+    - name: workspace
+      persistentVolumeClaim:
+        claimName: dops-claim
+    - name: source
+      persistentVolumeClaim:
+        claimName: dops-claim
