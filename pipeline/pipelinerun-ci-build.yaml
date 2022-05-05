@@ -1,7 +1,7 @@
 ﻿apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: run-ci-pipeline-01-
+  name: run-ci-pipeline-11
   namespace: devops
 spec: 
   pipelineRef:
