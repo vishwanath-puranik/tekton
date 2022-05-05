@@ -1,20 +1,15 @@
 ﻿apiVersion: batch/v1
 kind: Job
 metadata:
-  name: example
+  name: trigger
   namespace: devops
 spec:
   selector: {}
   template:
     metadata:
-      name: pi
+      name: trigger
     spec:
       containers:
-        - name: pi
-          image: perl
-          command:
-            - perl
-            - '-Mbignum=bpi'
-            - '-wle'
-            - print bpi(2000)
+        - name: trigger
+          image: quay.io/vishwanath_puranik/oc-client:latest
       restartPolicy: Never
