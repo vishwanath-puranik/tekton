@@ -3,4 +3,6 @@ kind: Job
 metadata:
   name: trigger-pipeline
   namespace: devops
-spec: {}
+spec: 
+  selector: {}
+  template: {}
